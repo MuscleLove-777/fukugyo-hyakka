@@ -1,0 +1,132 @@
+baseURL = "https://musclelove-777.github.io/fukugyo-hyakka/"
+googleAnalytics = "G-CSFVD34MKK"
+languageCode = "ja"
+defaultContentLanguage = "ja"
+title = "副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド"
+theme = "PaperMod"
+paginate = 20
+
+[params]
+  env = "production"
+  description = "副業・お金の稼ぎ方を完全網羅。初心者向けの始め方からフリーランス独立まで、月5万円〜100万円を目指すロードマップを紹介"
+  author = "副業ハック編集部"
+  defaultTheme = "light"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowToc = true
+  TocOpen = true
+  comments = false
+  canonicalURL = true
+  keywords = ["副業 おすすめ", "副業 始め方", "お金 稼ぐ方法", "在宅ワーク", "フリーランス", "投資 初心者", "アフィリエイト 始め方", "不労所得", "せどり", "副業 ランキング"]
+
+  [params.homeInfoParams]
+    Title = "副業ハック"
+    Content = "月5万円から始めるお金の稼ぎ方完全ガイド。初心者向けの副業からフリーランス独立まで、あなたに合った稼ぎ方が見つかる。"
+
+  [[params.socialIcons]]
+    name = "x-twitter"
+    url = "https://x.com/MuscleGirlLove7"
+
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = true
+
+[sitemap]
+  changefreq = "daily"
+  priority = 0.7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[[menu.main]]
+  name = "ホーム"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "初心者向け"
+  url = "/categories/初心者向け/"
+  weight = 2
+
+[[menu.main]]
+  name = "ネット副業"
+  url = "/categories/ネット副業/"
+  weight = 3
+
+[[menu.main]]
+  name = "投資"
+  url = "/categories/投資/"
+  weight = 4
+
+[[menu.main]]
+  name = "フリーランス"
+  url = "/categories/フリーランス/"
+  weight = 5
+
+[[menu.main]]
+  name = "アフィリエイト"
+  url = "/categories/アフィリエイト/"
+  weight = 6
+
+[[menu.main]]
+  name = "YouTube"
+  url = "/categories/youtube/"
+  weight = 7
+
+[[menu.main]]
+  name = "SNS"
+  url = "/categories/sns副業/"
+  weight = 8
+
+[[menu.main]]
+  name = "プログラミング"
+  url = "/categories/プログラミング/"
+  weight = 9
+
+[[menu.main]]
+  name = "ライティング"
+  url = "/categories/ライティング/"
+  weight = 10
+
+[[menu.main]]
+  name = "仮想通貨"
+  url = "/categories/仮想通貨/"
+  weight = 11
+
+[[menu.main]]
+  name = "不動産"
+  url = "/categories/不動産投資/"
+  weight = 12
+
+[[menu.main]]
+  name = "せどり"
+  url = "/categories/せどり・転売/"
+  weight = 13
+
+[[menu.main]]
+  name = "スキル販売"
+  url = "/categories/スキル販売/"
+  weight = 14
+
+[[menu.main]]
+  name = "不労所得"
+  url = "/categories/不労所得/"
+  weight = 15
+
+[[menu.main]]
+  name = "税金"
+  url = "/categories/税金・確定申告/"
+  weight = 16
+
+[[menu.main]]
+  name = "検索"
+  url = "/search/"
+  weight = 17

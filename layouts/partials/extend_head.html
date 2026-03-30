@@ -1,0 +1,97 @@
+<!-- OGP / Twitter Card -->
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@MuscleGirlLove7">
+
+<!-- JSON-LD: WebSite with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+{{ if .IsPage }}
+<!-- JSON-LD: Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "副業ハック編集部"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "副業ハック"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "{{ .Site.BaseURL }}"
+    }{{ if .Params.categories }},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ index .Params.categories 0 }}",
+      "item": "{{ .Site.BaseURL }}categories/{{ index .Params.categories 0 | urlize }}/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "{{ .Title }}"
+    }{{ end }}
+  ]
+}
+</script>
+
+<!-- JSON-LD: FAQPage (if FAQ section exists) -->
+{{ if findRE "## よくある質問" .RawContent }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ $faqContent := .RawContent }}
+    {{ $questions := findRE "### Q[0-9]*[.:：](.+)" $faqContent }}
+    {{ range $i, $q := $questions }}
+    {{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ replaceRE "### Q[0-9]*[.:：]\\s*" "" $q }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "記事内の該当セクションをご覧ください。"
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
