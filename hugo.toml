@@ -47,86 +47,103 @@ paginate = 20
   home = ["HTML", "RSS", "JSON"]
 
 [[menu.main]]
+  identifier = "menu-home"
   name = "ホーム"
   url = "/"
   weight = 1
 
 [[menu.main]]
+  identifier = "menu-beginner"
   name = "初心者向け"
   url = "/categories/初心者向け/"
   weight = 2
 
 [[menu.main]]
+  identifier = "menu-net-fukugyo"
   name = "ネット副業"
   url = "/categories/ネット副業/"
   weight = 3
 
 [[menu.main]]
+  identifier = "menu-toushi"
   name = "投資"
   url = "/categories/投資/"
   weight = 4
 
 [[menu.main]]
+  identifier = "menu-freelance"
   name = "フリーランス"
   url = "/categories/フリーランス/"
   weight = 5
 
 [[menu.main]]
+  identifier = "menu-affiliate"
   name = "アフィリエイト"
   url = "/categories/アフィリエイト/"
   weight = 6
 
 [[menu.main]]
+  identifier = "menu-youtube"
   name = "YouTube"
   url = "/categories/youtube/"
   weight = 7
 
 [[menu.main]]
+  identifier = "menu-sns"
   name = "SNS"
   url = "/categories/sns副業/"
   weight = 8
 
 [[menu.main]]
+  identifier = "menu-programming"
   name = "プログラミング"
   url = "/categories/プログラミング/"
   weight = 9
 
 [[menu.main]]
+  identifier = "menu-writing"
   name = "ライティング"
   url = "/categories/ライティング/"
   weight = 10
 
 [[menu.main]]
+  identifier = "menu-crypto"
   name = "仮想通貨"
   url = "/categories/仮想通貨/"
   weight = 11
 
 [[menu.main]]
+  identifier = "menu-fudosan"
   name = "不動産"
   url = "/categories/不動産投資/"
   weight = 12
 
 [[menu.main]]
+  identifier = "menu-sedori"
   name = "せどり"
   url = "/categories/せどり・転売/"
   weight = 13
 
 [[menu.main]]
+  identifier = "menu-skill"
   name = "スキル販売"
   url = "/categories/スキル販売/"
   weight = 14
 
 [[menu.main]]
+  identifier = "menu-furoshotoku"
   name = "不労所得"
   url = "/categories/不労所得/"
   weight = 15
 
 [[menu.main]]
+  identifier = "menu-zeikin"
   name = "税金"
   url = "/categories/税金・確定申告/"
   weight = 16
 
 [[menu.main]]
+  identifier = "search"
   name = "検索"
   url = "/search/"
   weight = 17
