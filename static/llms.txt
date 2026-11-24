@@ -1,0 +1,15 @@
+# 副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド
+
+> 副業・お金の稼ぎ方を完全網羅。初心者向けの始め方からフリーランス独立まで、月5万円〜100万円を目指すロードマップを紹介
+
+## Main Pages
+
+- [categories](https://musclelove-777.github.io/fukugyo-hyakka/categories/): main page of 副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド.
+- [tags](https://musclelove-777.github.io/fukugyo-hyakka/tags/): main page of 副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド.
+- [search](https://musclelove-777.github.io/fukugyo-hyakka/search/): main page of 副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド.
+- [fukugyo hyakka](https://musclelove-777.github.io/fukugyo-hyakka/): main page of 副業ハック | 月5万円から始めるお金の稼ぎ方完全ガイド.
+
+## About this file
+
+This llms.txt follows the llmstxt.org proposal and lists the main entry points of this site for LLM-based crawlers and AI search agents.
+Generated automatically from sitemap.xml. Source repository: https://github.com/MuscleLove-777/fukugyo-hyakka
